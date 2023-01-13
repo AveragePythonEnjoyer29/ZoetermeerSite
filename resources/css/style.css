@@ -1,44 +1,62 @@
 * {
-    margin: 0px;
-}
-
-.navbar-top ul{
-    background: #02315E ;
-
-    list-style-type: none; /* remove the bullets */
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-.navbar-top ul li {
-    float: left;
-    display: inline;
-}
-
-.navbar-top ul li a {
-    display: block;
-    text-decoration: none;
-    line-height: 60px;
-    padding: 14px 16px;
-    color: #cd90f2;
-}
-
-.navbar-top ul li img {
-    text-decoration: none;
-    line-height: 60px;
-    color: #cd90f2;
-}
-
-.navbar-top ul li a:hover {
-    background: #5c4869;
-    
+html {
+    font-family: sans-serif;
 }
 
 body {
     background: #4d4d4d;
-    font-family: 'Chivo Mono', serif;
     font-size: 24px;
+}
+
+.top {
+    background: #fbfbfb;
+}
+
+.top > nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.top > nav > ul > li, nav > ul > li {
+    width: 100%;
+    height: 100%;
+}
+
+.top > nav > ul > li:hover {
+    background: #b3b3b3;
+}
+
+.top > nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(93, 93, 93);
+}
+
+.top > nav > ul > li > a:visited, .top > nav > ul > li > a:link {
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+}
+
+.banner {
+    background: grey;
+    height: 30vw;
+}
+
+.zienendoen {
+    background: red;
+    height: 20vw;
 }
 
 /*
