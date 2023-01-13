@@ -3,13 +3,10 @@
     padding: 0;
 }
 
-html {
-    font-family: sans-serif;
-}
-
 body {
     background: #4d4d4d;
     font-size: 24px;
+    font-family: sans-serif;
 }
 
 img {
@@ -66,15 +63,57 @@ img:hover {
     url(/resources/img/banner.webp);
 }
 
-.banner-text {
+.box-text {
     text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
     padding-top: 3%;
     color: #fbfbfb
 }
 
+.contact-items {
+    color: white;
+}
+
+.box {
+    background: #b3b3b3;
+    height: 33vw;
+}
+
 .zienendoen {
-    background: rgb(57, 57, 57);
-    height: 20vw;
+    background: rgb(93, 93, 93);
+}
+
+.openingstijden {
+    background: rgb(28, 28, 28);
+}
+
+.contact {
+    background: #b3b3b3;
+}
+
+.snakebox {
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 30px;
+
+    background: #fbfbfb;
+    background-image: none;
+    color: rgb(93, 93, 93);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > p {
+    font-size: 15px;
+    margin: 0 auto;
 }
 
 /*
