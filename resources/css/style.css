@@ -12,6 +12,16 @@ body {
     font-size: 24px;
 }
 
+img {
+    width: 100%;
+    transition: transform 0.3s ease 0s;
+}
+
+/* fancy animation without jabbascript */
+img:hover {
+    transform: scale(1.15);
+}
+
 .top {
     background: #fbfbfb;
 }
@@ -50,12 +60,19 @@ body {
 }
 
 .banner {
-    background: grey;
     height: 30vw;
+    background-image: 
+    linear-gradient(transparent, 60%, black),
+    url(/resources/img/banner.webp);
+}
+
+.banner h1 {
+    padding-top: 5%;
+    color: #fbfbfb
 }
 
 .zienendoen {
-    background: red;
+    background: rgb(57, 57, 57);
     height: 20vw;
 }
 
