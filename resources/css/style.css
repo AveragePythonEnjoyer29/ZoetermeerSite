@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #4d4d4d;
     font-size: 24px;
@@ -66,7 +70,8 @@ img:hover {
 .box-text {
     text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
     padding-top: 3%;
-    color: #fbfbfb
+    color: #fbfbfb;
+    overflow: hidden;
 }
 
 .contact-items {
@@ -96,7 +101,6 @@ img:hover {
 }
 
 footer {
-    position: absolute;
     display: flex;
     position: fixed;
     bottom: 0;
