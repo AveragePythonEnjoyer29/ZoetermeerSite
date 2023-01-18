@@ -67,13 +67,6 @@ img:hover {
     url(/resources/img/banner.webp);
 }
 
-.box-text {
-    text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
-    padding-top: 3%;
-    color: #fbfbfb;
-    overflow: hidden;
-}
-
 .contact-items {
     color: white;
 }
@@ -83,8 +76,33 @@ img:hover {
     height: 33vw;
 }
 
+.box-text {
+    text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+    padding-top: 3%;
+    color: #fbfbfb;
+    overflow: hidden;
+}
+
+.item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3px;
+    gap: 2rem;
+}
+
+.item-box {
+    background-color: #b3b3b3; /* placeholder kleur */
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
 .zienendoen {
-    background: rgb(93, 93, 93);
+    background: #989898;
 }
 
 .openingstijden {
