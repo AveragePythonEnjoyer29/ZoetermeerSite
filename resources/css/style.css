@@ -1,6 +1,7 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -24,44 +25,45 @@ img:hover {
 }
 
 .top {
-    background: #fbfbfb;
-}
-
-.top > nav > ul {
-    list-style: none;
+    background: white;
     display: flex;
-    flex-direction: row;
+    height: 120px;
+
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
     align-items: center;
-    height: 100%;
-    justify-content: space-evenly;
-    gap: 2rem;
-}
-
-.top > nav > ul > li, nav > ul > li {
     width: 100%;
+}
+
+.nav-item {
+    display: flex;
     height: 100%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
 }
 
-.top > nav > ul > li:hover {
-    background: #b3b3b3;
-}
-
-.top > nav > ul > li > a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    line-height: 60px;
-    text-align: center;
-    color: rgb(93, 93, 93);
-}
-
-.top > nav > ul > li > a:visited, .top > nav > ul > li > a:link {
-    color: rgb(93, 93, 93);
+.nav-item a {
+    color: black;
+    display: flex;
+    padding: 10px 15px;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
-    height: 30vw;
+    height: 50vw;
     background-image: 
     linear-gradient(transparent, 60%, black),
     url(/resources/img/banner.webp);
@@ -72,20 +74,30 @@ img:hover {
 }
 
 .box {
-    background: #b3b3b3;
-    height: 33vw;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 35vw;
 }
 
 .box-text {
     text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
-    padding-top: 3%;
-    color: #fbfbfb;
-    overflow: hidden;
+
+    color: white;
+}
+
+
+.time-list {
+    list-style-type:square;
 }
 
 .item-list {
     list-style: none;
     display: flex;
+
     flex-direction: row;
     align-items: center;
     padding-right: 3px;
@@ -93,24 +105,37 @@ img:hover {
 }
 
 .item-box {
-    background-color: #b3b3b3; /* placeholder kleur */
-
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
+    width: 45vw;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .zienendoen {
-    background: #989898;
+    background: white;
+
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .openingstijden {
-    background: rgb(28, 28, 28);
+    background: rgb(0, 0, 0);
+    color: white;
+
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .contact {
     background: #b3b3b3;
+
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .snakebox {
@@ -123,19 +148,33 @@ footer {
     position: fixed;
     bottom: 0;
 
-    width: 100%;
-    height: 30px;
+    width: 100vw;
+    height: 3vh;
 
-    background: #fbfbfb;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    background: white;
     background-image: none;
-    color: rgb(93, 93, 93);
+    color: black;
+
     justify-content: space-evenly;
     align-items: center;
 }
 
 footer > p {
-    font-size: 15px;
+    font-size: 70%;
     margin: 0 auto;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        font-size: 14px;
+    }
+
+    .banner-title {
+        font-size: 380%;
+    }
 }
 
 /*
