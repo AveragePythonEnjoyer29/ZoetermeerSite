@@ -17,6 +17,7 @@ body {
 img {
     width: 100%;
     transition: transform 0.3s ease 0s;
+    object-fit: cover;
 }
 
 /* fancy animation without jabbascript */
@@ -78,13 +79,16 @@ img:hover {
 
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
+
+    flex-shrink: 0;
+    flex-grow: 1;
 
     height: 35vw;
 }
 
 .box-text {
-    text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;
+    /*text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px, rgba(0, 0, 0, 0.498039) -1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px 1px 0px, rgba(0, 0, 0, 0.498039) 1px -1px 0px;*/
 
     color: white;
 }
@@ -105,18 +109,20 @@ img:hover {
 }
 
 .item-box {
+    display: flex;
+
+    padding: 40px;
     width: 45vw;
     flex-shrink: 1;
     flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .zienendoen {
     background: white;
 
     padding: 40px;
-    display: flex;
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 .openingstijden {
@@ -124,23 +130,23 @@ img:hover {
     color: white;
 
     padding: 40px;
-    display: flex;
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 .contact {
     background: #b3b3b3;
 
     padding: 40px;
-    display: flex;
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 .snakebox {
-    background: rgb(0, 0, 0);
+    background: rgb(107, 107, 107);
     width: 100%;
+}
+
+.snake {
+    box-shadow: black 20px 10px 50px;
 }
 
 footer {
@@ -170,6 +176,16 @@ footer > p {
 @media screen and (max-width:700px) {
     body {
         font-size: 14px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        font-size: 80%;
+        height: 62vw;
+    }
+
+    .snake {
+        height: 30%;
     }
 
     .banner-title {
