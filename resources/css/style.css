@@ -122,10 +122,13 @@ img:hover {
 .snakebox {
     background: rgb(107, 107, 107);
     width: 100%;
+    height: 43vh;
 }
 
-.snake {
+#game {
     box-shadow: black 20px 10px 50px;
+    width: 100%;
+    height: 50%;
 }
 
 footer {
