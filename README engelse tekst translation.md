@@ -1,3 +1,7 @@
+Game Museum Zoetermeer
+The National Videogame Museum is 'the place to be' for anyone who wants to know (and experience) more about the history, social and cultural side of video games. The museum also lets its visitors experience the games of tomorrow. Gamers young and old are welcome to play, discover, learn and share experiences online.
+
+------------------------------------------------------------------------------
 Our history
 A garage box in The Hague is the place where the adventure started in 2008, with two friends Hasan Tasdemir and Pascal Rappailles. The garage quickly became too small, after which they moved to a warehouse on an industrial estate. Unfortunately, the shed was not heated and everything had to be transferred to an empty Ministry of Agriculture in the middle of winter. When this building also had to be cleared out, the then collection of 10 arcade video games was stored with some spare parts in an old showroom for classic cars. Because there was no room to renovate or play with the cabinets, suitable space was looked for.
 
