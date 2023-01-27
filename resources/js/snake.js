@@ -135,7 +135,7 @@ function isGameOver() {
     return gameOver;
     
     function restart() {
-        location.reload()
+        location.reload();
     }
 }
 
